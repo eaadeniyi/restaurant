@@ -1,0 +1,405 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display:flex;
+    flex-wrap: nowrap;
+    background-color: #009926;
+    color: aliceblue;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .nav a {
+      float: none;
+      width: 100%;
+    }
+}
+
+nav h1 {
+        color: #ffe6f2;
+}
+
+nav li {
+        display: inline-block;
+        list-style-type: none;
+        margin: 5px;
+        padding: 5px;
+        border-right: 1px solid aliceblue;
+}
+
+nav li:last-child {
+                    border-right: none;
+}
+
+nav a:hover {
+            background-color: rgb(236, 236, 236);
+            color: black;
+}
+
+nav a {
+    color: aliceblue;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+.welcome{
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.welcome-statement{
+    width:60%;
+}
+
+.welcome .welcome-img{
+    width:40%;
+}
+
+.welcome-img img {
+    width:100%;
+}
+
+@media screen and (max-width: 768px) {
+    .welcome .welcome-img{
+        width:100%;
+    }
+    .welcome-statement{
+        width:100%;
+    }
+}
+
+.welcome-statement input[type=button]{
+    height: 30px;
+    background-color:rgb(190, 36, 36);
+    color:rgb(236, 236, 236);
+    border-radius: 8px;
+    border:none;
+    padding: 10px;
+    align-items: center;
+}
+
+.welcome-statement  p{ 
+                    line-height: 200%;
+} 
+
+.welcome-menu {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+}
+
+.welcome-menu img{
+    height: auto;
+    width: 100%;
+}
+
+.menu1, .menu2, .menu3, .menu4  {
+            border: 1px solid black;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 200%;
+            background-color: rgb(243, 243, 243);
+            width: 20%; 
+            margin: 5px;
+            
+}
+
+@media(max-width:768px){
+    
+.menu1, .menu2, .menu3, .menu4  {
+
+    width: 100%; 
+    margin:0;
+    padding: 3%;
+    
+}
+}
+
+.welcome-menu p{
+            color:rgb(21, 143, 27);
+            font-size: 15px;
+}
+
+.welcome-menu input[type=button]{
+    background-color:rgb(181, 223, 134);
+    border: none;
+    height: 30px;
+    padding: 10px;
+}
+
+.welcome-menu input:hover{
+    color:rgb(236, 236, 236);
+    background-color: 	#006600;
+}
+
+.aboutus {
+    padding: 2%;
+}
+
+.aboutus .aboutus-img{
+    width:33.33%;
+}
+.aboutus-img img {
+    width:100%;
+    float: left;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutus .aboutus-img{
+        width:100%;
+    }
+    .aboutus h2{
+        width: 100%;
+    }
+    .aboutus .us{
+        width:100%;
+    }
+    .aboutus .dishes{
+        width: 100%;
+    }
+}
+
+.us {
+    line-height: 30px;
+    padding: 2%;
+    width: 33.33%;
+    float: left;
+}
+
+.aboutus h2 {
+    color:rgb(21, 143, 27);
+    font-size: 40px;  
+}
+
+.dishes {
+    width: 33.33%;
+    float: left;
+}
+.aboutus .dishes img{
+    height: auto;
+    width: 33.33%;
+    margin: 5px;
+    
+}
+
+footer {
+    color: white;
+    background-color: rgb(21, 143, 27);
+    text-align: center;
+    line-height:30px;
+    font-size: 18px;
+}
+
+.chef img {
+    padding: 2% 10%;
+   
+}
+
+@media(max-width:768px){
+    
+    .chef img {
+    
+        width: 100%; 
+        margin:0;
+        padding: 3%;
+        
+    }
+    }
+
+.chef h1 {
+    text-align: center;
+    color:rgb(21, 143, 27);
+}
+
+.chef h4 {
+    text-align: center;
+    
+}
+
+.chefs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.chef1, .chef2, .chef3, .chef4 {
+    border: 2px solid #660000;
+    line-height: 35px;
+    border-radius: 10px;
+    width: 23%;
+    height:auto;
+    
+}
+
+.chefs img{
+    width: 100%;
+    height:auto;
+}
+
+@media(max-width:768px){
+    
+    .chef1, .chef2, .chef3, .chef4  {
+    
+        width: 100%; 
+        margin:5px 0px;
+        padding: 3%;
+        
+    }
+    }
+
+.desc {
+    text-align:center;
+}
+
+del {
+    color:#cc0000;
+}
+
+.food {
+    text-align:center;
+    color:rgb(190, 36, 36);
+    font-size: 40px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu5, .menu6, .menu7, .menu8, .menu9, .menu10, .menu11, .menu12 {
+    /* border: 2px solid #660000; */
+    line-height: 35px;
+    border-radius: 10px;
+    width: 20%;
+    height:50%;
+    margin: 1%;
+
+}
+
+@media(max-width:768px){
+    
+    .menu5, .menu6, .menu7, .menu8, .menu9, .menu10, .menu11, .menu12  {
+        width: 49%; 
+        margin: 5px 0px;
+        padding: 3%;   
+    }
+    }
+
+.menu img{
+    width: 100%;
+    height:50%;
+}
+
+.delivery h2 {
+    font-size: 35px;
+    color:rgb(21, 143, 27);
+}
+
+.delivery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.delivery_input {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+.delivery_input input[type=submit] {
+    padding: 10px;
+    background-color: #429042;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.delivery_input input[type=submit]:hover {
+    background-color: #006600;
+}
+
+.contact h2 {
+    font-size: 35px;
+    color:rgb(21, 143, 27);
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact_input {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: url("images/family_photo.jpg");
+}
+
+.contact_input form{
+    background-color: #d8d8d8;
+    padding:10px;
+}
+
+input[type=text]:focus {
+    background-color: rgb(221, 240, 247);
+}
+
+input[type=email]:focus {
+    background-color: rgb(221, 240, 247);
+}
+
+textarea:focus {
+    background-color: rgb(221, 240, 247);
+}
+input[type="email"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+}
+
+.contact_input input[type=submit] {
+    padding: 10px;
+    background-color: #429042;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact_input input[type=submit]:hover {
+    background-color: #006600;
+}
+
